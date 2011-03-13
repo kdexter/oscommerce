@@ -23,8 +23,6 @@ use osCommerce\OM\Core\DatabasePDO;
     protected static $_default_application = 'Index';
 
     public static function initialize() {
-      OSCOM::loadConfig();
-
       if ( strlen(DB_SERVER) < 1 ) {
         osc_redirect(OSCOM::getLink('Setup'));
       }
